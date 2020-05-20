@@ -1,1 +1,342 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Assignment-2</title>
+<style>
+<!--Table Style-->
+table, th, td {
+	border: 1px solid black;
+}
+<!--Tab Style-->
+body {
+	font-family: Calibri;
+	background-color: #e6f2ff;
+}
 
+/* Style the tab */
+.tab {
+	overflow: hidden;
+	border: 1px solid #ccc;
+	background-color: #3399ff;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+	font-family: Calibri;
+	background-color: inherit;
+	float: left;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 14px 14px;
+	transition: 0.3s;
+	font-size: 16px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+	background-color: #80bfff;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+	background-color: #0073e6;
+}
+
+/* Style the tab content */
+.tabcontent {
+	background-color: #e6f2ff;
+	display: none;
+	padding: 6px 12px;
+	border: 1px solid #ccc;
+	border-top: none;
+	font-family: Calibri;
+	font-size: 16px;
+
+}
+
+</style>
+</head>
+<body>
+
+<div class="tab">
+  <button class="tablinks" onclick="openSection(event, 'Team Valiant')">Team Valiant</button>
+  <button class="tablinks" onclick="openSection(event, 'Project')">Project</button>
+  
+
+</div>
+<div id="Project" class="tabcontent">
+  <h3>KeepOut</h3>
+  <p>The project will be a collection of security programs and will serve as a secure hub of sorts containing a VPN, a password manager, an anti-virus, a secure web browser and a secure cloud based encrypted file storage. To begin with I&rsquo;m going to talk about account management.</p>
+  <p>Right off the bat it might seem counterintuitive to want a secure service to protect your privacy only to give it away to the person saying they can give you your privacy back but the account is only for 2 things. First it&rsquo;s there to identify you not personally only by email or username so that if you need to install it onto a new computer since the base program will be a one time purchase and will include everything but the cloud file storage however will have the structures to allow those competent to set up a local secure server and the expanded VPN servers that are more likely to get around a government or companies attempts to stop proxy&rsquo;s. The reason for this is because servers for both proxies and cloud file storage can get expensive very quickly and without constant cash flow from those that wish to use them the service would quickly sink. The password manager would be local or cloud based using Microsoft Azure with no extra charge but might implement a simple storage limit given that for the most part most people would only need a max of around 15 passwords and given that it&#39;s a choice not all will be comfortable having their passwords stored elsewhere. It will also have the ability to generate unique passwords itself that are made of random text made locally so that there is no worry about interception in any way. The VPN or Virtual Private Network functions as a proxy allowing you to essentially trick websites into thinking you&rsquo;re somewhere else which allows you to either get access to content you couldn&rsquo;t otherwise or stop your internet provider or someone intercepting your traffic from being able to see exactly what you do. The base version will include access to a few VPN servers in most countries that have modern internet infrastructure allowing access to content in other countries however being limited to a few servers means that it isn&rsquo;t too hard to be blocked by governments or companies. The subscription model will give access to constantly updated servers in an effort to avoid being blocked and allowing all content to be accessed and watched. The anti-virus will function like other market leaders providing from files or programs hidden in websites, emails or downloads that are likely to harm your computer. The base program will have the ability to scan your computer and quarantine and delete flagged items that it detects while the paid version will let you protect up to 5 computers with real-time flagging of spam or websites that are likely to contain malware as well as parental controls that will allow parents to easily set active hours for all apps or services such as internet as well as restrict some completely. It will also allow you to encrypt folders and work with the password manager to make sure that only you and those you want to share access to are able to get into these folders.</p>
+</div>
+
+<div id="Team Valiant" class="tabcontent">
+	<div class="tab">
+	<button class="tablinks" onclick="openSection(event, 'Mitchell')">Mitchell</button>
+	<button class="tablinks" onclick="openSection(event, 'Tim')">Tim</button>
+	<button class="tablinks" onclick="openSection(event, 'Eenu')">Eenu</button>
+	<button class="tablinks" onclick="openSection(event, 'Tyson')">Tyson</button>
+	<button class="tablinks" onclick="openSection(event, 'Wenjun')">Wenjun</button>
+	</div>
+	<h3>Team Profile</h3>
+	<p>For our previous individual assignments, each team member had to complete three online personality tests:</p>
+	<ul>
+		<li>Myers-Briggs Type Indicator (MBTI) test</li>
+		<li>Learning Style test</li>
+		<li>A test of their own choosing</li>
+	</ul>
+	<p>Each team member used 16Personalities for the MBTI test and different providers for the Learning Styles tests.</p>
+	<p>Table 1. Personality test results for each team member</p>
+	<table>
+		<tr>
+			<th>Team member</th>
+			<th>MBTI result</th>
+			<th>Learning Style result</th>
+			<th>Miscellaneous test & result</th>
+		</tr>
+		<tr>
+			<td>Mitchell</td>
+			<td>INTP-A <br>Logician</td>
+			<td><ul>
+				<li>50% Visual</li>
+				<li>30% Auditory</li>
+				<li>20% Kinaesthetic</li>
+			</ul></td>
+			<td><b>Enneagram test</b><br>
+			Result: Type 3 - Performer</td>
+		</tr>
+		<tr>
+			<td>Tim</td>
+			<td>INFP-T <br> Mediator</td>
+			<td>Visual</td>
+			<td><b>Emotional Intelligence test</b><br>
+			Result: 14/20</td>
+		</tr>
+		<tr>
+			<td>Eenu</td>
+			<td>ISFP-T <br>Adventurer</td>
+			<td>Multimodal learner:
+				<ul>
+					<li>Visual</li>
+					<li>Aural</li>
+					<li>Read/Write</li>
+					<li>Kinaesthetic</li>
+			</td>
+			<td><b>Big Five Personality test</b><br>
+			Result:
+				<ul>
+					<li>69% Openness</li>
+					<li>58% Conscientiousness</li>
+					<li>35% Extroversion</li>
+					<li>67% Agreeableness</li>
+					<li>60% Neuroticism</li>
+				</ul>
+			</td>
+		</tr>
+		<tr>
+			<td>Tyson</td>
+			<td>ISFJ-T<br>Defender</td>
+			<td>
+				<ul>
+					<li>40% Visual</li>
+					<li>30% Auditory</li>
+					<li>30% Tactile</li>
+				</ul>
+			</td>
+			<td><b>Big Five Personality test</b><br>
+			Result: Extroversion 58% <br>
+			"Fall[s] into the middle of the introversion and extroversion continuum..."
+			</td>
+		</tr>
+		<tr>
+			<td>Wenjun</td>
+			<td>INFP-A/INFP-T<br>Mediator</td>
+			<td>Visual</td>
+			<td><b>What hobby should I have test?</b></br>
+			Result: photography</td>
+		</tr>
+	</table>
+	<p>The 16Personalities test determines personality types by measuring five different personality aspects.<br> These aspects are:</p>
+	<ul>
+		<li>The mind aspect (<b>I or E</b>) measures if someone is more introverted or extroverted.</li>
+		<li>The energy aspect (<b> S or N </b>) measures if someone is more observant or intuitive.</li>
+		<li>The nature aspect (<b> T or F </b>) measures if someone makes decisions based more on logic or emotions.</li>
+		<li>The tactic aspect (<b> J or P </b>) measures if someone is more structured or flexible in their work approach.</li>
+		<li>The identity aspect (<b> A or T </b>) measures how self-assured a person is.</li>
+	</ul>
+	<p>When the aspects above are combined, a five-letter result corresponds to a particular personality type (16 Personalities 2020).</p>
+	
+	<p>The common result for the team is the mind aspect; all members are more introverted than extroverted. This suggests that all team members, when provided with the option, may prefer to pick individual work tasks than those that involve teamwork. This could mean as a team, we are likely to divide group tasks so that each person is working on a task individually, rather than having more than one person working together on a task.</p>
+	
+	<p>The team scored differently for all the other aspects – this is excellent, as diverse working styles and viewpoints can broaden the way in work is approached and completed.  Our team may brainstorm and may share different ideas for how to complete our group tasks.</p>
+	
+	<p>The learning style tests determine how a person best learns – whether that be through visual, auditory or kinaesthetic means. While each team member used a different learning style quiz, the results indicate that almost all the members are entirely visual learners or prefer visual learning over the other styles of learning. </p>
+	
+	<p>This suggests the team will be most comfortable to communicate, plan and relay information with each other in a text-based format, rather than through an online video chat or voice call.</p>
+	
+	<p>As the third test result is different for almost every team member, it would be unfair to single out individuals and discuss how a particular personality result would affect how the team works as a whole. However, these results could be a good point for discussion between team members to ensure everyone feels comfortable contributing, sharing and interacting together as a group.</p>
+	<hr>
+	
+	<h3>Ideal Jobs</h3>
+	<p> Table 2. Ideal jobs (and the industry they blong to) for each team member</p>
+	
+	<table>
+	<tr>
+		<th>Team Member</th>
+		<th>Ideal Job</th>
+		<th>Industry</th>
+	</tr>
+	<tr>
+		<td>Mitchell</td>
+		<td>IT Operations & Infrastructure Administrator</td>
+		<td>Manufacturing</td>
+	</tr>
+	<tr>
+		<td>Tim</td>
+		<td>IT Manager</td>
+		<td>Manufacturing</td>
+	</tr>
+	<tr>
+		<td>Eenu</td>
+		<td>Application Support Analyst</td>
+		<td>Insurance</td>
+	</tr>
+	<tr>
+		<td>Tyson</td>
+		<td>Cyber Security Analyst</td>
+		<td>Emergency Services</td>
+	</tr>
+	<tr>
+		<td>Wenjun</td>
+		<td>Biostatistician/Data Analyst</td>
+		<td>Medical Research Institute</td>
+	</tr>
+	</table>
+	<p>When comparing and contrasting our ideal jobs, it is clear that they are all IT roles in industries that that are not primarily focused on information technology. This does not mean, however, that the businesses and organisations of our ideal jobs do not benefit.</p>
+	
+	<p>For instance, Wenjun’s ideal job involves data analysis that would provide the medical research team useful insight on their work. Likewise, having an IT department in almost any organisation is useful, as the right technology can assist with keeping record of useful data to identify trends, provide solutions for work to be completed more efficiently and allow businesses to be innovative. Managing an IT department to benefit the overall business is a key responsibility of Tim’s ideal job.</p>
+	
+	<p>An IT department (and the related business) can only be successful if the right infrastructure and software is in place, is kept up to date, and the users are supported with any difficulties they may have; these are responsibilities of the ideal jobs picked by Mitchell, Tim and Eenu. Lastly, an IT system should always be secure and safe from external threats, and that this the purpose of Tyson’s ideal job.</p>
+	
+	<p>Our career plans as a team will differ, as each ideal job requires a different mix of qualifications, skills and years of experience. For example, Tyson’s ideal job as a Cyber Security Analyst, is specialised and states he will need at least 5 years of experience in information security roles. In contrast, Eenu’s ideal job as an Application Support Analyst requires no experience, as it is aimed at university graduates.</p>
+	
+	<p>With the exception of Eenu’s ideal job, the ideal jobs chosen by the team require some prior experience and knowlege, and are indicative of having a long-term goal/career plan in place.</p>
+	
+	<p>The longest career plan is likely to be Tim’s, as in his ideal job as an IT Manager, he will be responsible for the multiple IT teams at the workplace and the 3-8 staff working under him. He will be required to liaise with other business units in his workplace, and will need experience and understanding of different sections of IT – infrastructure, security, data analytics, etc.</p>
+	
+	<p>Only Eenu and Wenjun’s ideal jobs state a degree is required, however, having a degree or educational background in IT would be useful for all our ideal jobs.</p>
+	<hr>
+	
+	<h3>References</h3>
+	<ul>
+		<li>16Personalities 2020, Core Theory | Our Framework, view 17 April 2020, <br>
+		<a href = "https://16personalities.com/articles/our-theory">https://www.16personalities.com/articles/our-theory</a></li>
+	</ul>
+	
+	
+</div>
+
+<div id="Mitchell" class="tabcontent">
+<div class="tab">
+	<button class="tablinks" onclick="openSection(event, 'Mitchell')">Mitchell</button>
+	<button class="tablinks" onclick="openSection(event, 'Tim')">Tim</button>
+	<button class="tablinks" onclick="openSection(event, 'Eenu')">Eenu</button>
+	<button class="tablinks" onclick="openSection(event, 'Tyson')">Tyson</button>
+	<button class="tablinks" onclick="openSection(event, 'Wenjun')">Wenjun</button>
+	</div>
+	<h3> Mitchell Broadbent</h3>
+	<h3> s3858182 </h3>
+	<h3> s3858182@student.rmit.edu.au </h3>
+	<a href = "https://mitchell-38.github.io/Assignment-1">Website</a>
+	<hr>
+	<p> Mitchell’s interest in IT was not formed by a particular event or person; rather it was formed by a conglomeration of known figures and works both fictional and existent. Mitchell is a natural born Australian. He is interested in the problem solving and diagnostic aspects of programming, and potentially systems administration. In his spare time, Mitchell likes to read and look after his two pet rats. </p>
+</div>
+
+<div id="Tim" class="tabcontent">
+<div class="tab">
+	<button class="tablinks" onclick="openSection(event, 'Mitchell')">Mitchell</button>
+	<button class="tablinks" onclick="openSection(event, 'Tim')">Tim</button>
+	<button class="tablinks" onclick="openSection(event, 'Eenu')">Eenu</button>
+	<button class="tablinks" onclick="openSection(event, 'Tyson')">Tyson</button>
+	<button class="tablinks" onclick="openSection(event, 'Wenjun')">Wenjun</button>
+	</div>
+	<h3> Tim Osborne</h3>
+	<h3> s3860099 </h3>
+	<h3> s3860099@student.rmit.edu.au </h3>
+	<a href = "https://daftvaderdev.github.io/">Website</a>
+	<hr>
+	<p>Tim’s interest in IT started from a young age; watching his family start using computers and playing interactive games where he could colour, draw, point and click. He continued to explore this interest by taking IT classes in high school and would like to learn more about software. Tim is a second-generation Australian, knows a little German from his grandmother, and in his spare time, likes to read high fantasy and alternate history fiction. He has also recently taken to cooking.</p>
+</div>
+
+<div id="Eenu" class="tabcontent">
+<div class="tab">
+	<button class="tablinks" onclick="openSection(event, 'Mitchell')">Mitchell</button>
+	<button class="tablinks" onclick="openSection(event, 'Tim')">Tim</button>
+	<button class="tablinks" onclick="openSection(event, 'Eenu')">Eenu</button>
+	<button class="tablinks" onclick="openSection(event, 'Tyson')">Tyson</button>
+	<button class="tablinks" onclick="openSection(event, 'Wenjun')">Wenjun</button>
+	</div>
+	<h3> Eenu Monga</h3>
+	<h3> s3858815 </h3>
+	<h3> s3858815@student.rmit.edu.au </h3>
+	<a href = "https://s3858815.github.io/COSC2196/">Website</a>
+	<hr>
+	<p>Eenu’s interest in IT started with the data science boom and continued growing after seeing firsthand how IT could be used in the workplace to provide solutions and efficiencies. She is interested in programming, development and testing. Eenu is a first-generation Australian, born to Indian parents, knows some Hindi and Punjabi. In her spare time, she likes to read, watch episodes of Air Crash Investigation and think about a making a wall-sized aquarium.</p>
+</div>
+
+<div id="Tyson" class="tabcontent">
+<div class="tab">
+	<button class="tablinks" onclick="openSection(event, 'Mitchell')">Mitchell</button>
+	<button class="tablinks" onclick="openSection(event, 'Tim')">Tim</button>
+	<button class="tablinks" onclick="openSection(event, 'Eenu')">Eenu</button>
+	<button class="tablinks" onclick="openSection(event, 'Tyson')">Tyson</button>
+	<button class="tablinks" onclick="openSection(event, 'Wenjun')">Wenjun</button>
+	</div>
+	<h3>Tyson Carroll</h3>
+	<h3>s3660241</h3>
+	<h3>s3660241@student.rmit.edu.au</h3>
+	<a href = "https://s3660241.wordpress.com/">Website</a>
+	<hr>
+	<p>Tyson’s interest in IT started when he got his first computer at the age of ten and started playing games and was re-ignited after he started building computers for some of his friends. He is currently interested in cyber security and game development. Tyson is Australian born, and his father’s side of the family is from Turkey. His interests include basketball, video editing, gaming, and of course, computers.</p>
+
+</div>
+
+<div id="Wenjun" class="tabcontent">
+<div class="tab">
+	<button class="tablinks" onclick="openSection(event, 'Mitchell')">Mitchell</button>
+	<button class="tablinks" onclick="openSection(event, 'Tim')">Tim</button>
+	<button class="tablinks" onclick="openSection(event, 'Eenu')">Eenu</button>
+	<button class="tablinks" onclick="openSection(event, 'Tyson')">Tyson</button>
+	<button class="tablinks" onclick="openSection(event, 'Wenjun')">Wenjun</button>
+	</div>
+	<h3>Wenjun Bi</h3>
+	<h3>s3858029</h3>
+	<h3>s3858029@student.rmit.edu.au</h3>
+	<a href = "https://michaelbye.github.io/Wenjun-s--Profile/">Website</a>
+	<hr>
+	<p>Wenjun’s interest in IT started after he saw SQL data presented visually in a creative and intriguing manner, and he hopes to be able to analyse data and present it in the same way to others. Wenjun is of Chinese background, and can speak English, Cantonese and intermediate Mandarin. In his spare time, he likes to play basketball, video games and surf the web.</p>
+</div>
+
+
+
+<script>
+function openSection(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+</script>
+   
+</body>
+</html> 
